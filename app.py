@@ -1,5 +1,5 @@
 import streamlit as st
-from rembg.bg import remove
+from rembg import remove
 import io, os
 from PIL import Image
 
