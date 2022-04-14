@@ -1,6 +1,6 @@
 import streamlit as st
 import rembg
-from rembg import remove
+# from rembg import remove
 import io, os
 from PIL import Image
 
@@ -12,7 +12,7 @@ col1, col2 = st.columns(2)
 #function
 def remove_bg(image):
     input_img = Image.open(image)
-    result = remove(input_img)
+    result = rembg.remove(input_img)
     return result
 
 if image:
